@@ -5,3 +5,19 @@
 .container{
     margin-top: 10px;
 }
+
+.footer{
+    /*background-color: lightblue;*/
+    margin-top: 40px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+}
+.brand-icon{
+    width: 20px;
+}
+.footer-link{
+    text-decoration: none;
+}
+.footer-about{
+    float: right;
+}
