@@ -21,3 +21,13 @@
 .footer-about{
     float: right;
 }
+.gravatar {
+  max-width: 50px;
+  border-radius: 50%;
+}
+.user-info-h1 {
+    font-size: 1.4em;
+    letter-spacing: -1px;
+    margin-bottom: 3px;
+    margin-top: 15px;
+  }
