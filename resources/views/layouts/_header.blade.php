@@ -5,7 +5,7 @@
             @if(Auth::check())
             <li class="nav-item"><a href="#" class="nav-link">用户列表</a></li>
             <li class="nav-item"><a href="{{route('users.show',Auth::user())}}" class="nav-link">个人中心</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">编辑资料</a></li>
+            <li class="nav-item"><a href="{{route('users.edit',Auth::user())}}" class="nav-link">编辑资料</a></li>
             <li class="nav-item"><a href="#" class="nav-link">
                 <form action="{{route('logout')}}" method="post">
                     {{csrf_field()}}
@@ -15,7 +15,7 @@
             </a></li>
             @else
             <li class="nav-item"><a href="{{route('help')}}" class="nav-link">帮助</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">登入</a></li>
+            <li class="nav-item"><a href="{{route('login')}}" class="nav-link">登入</a></li>
 
             @endif
         </ul>
