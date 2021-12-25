@@ -10,7 +10,7 @@
     <p>
         请点击下面的链接完成注册
         <a href="{{route('confirm_email',$user->activation_token)}}">
-            {{$user->activation_token}}
+            {{route('confirm_email',$user->activation_token)}}
         </a>
     </p>
     <p>如果不是您本人的操作，请忽略此邮件！</p>
