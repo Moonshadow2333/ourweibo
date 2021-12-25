@@ -10,7 +10,7 @@
     <p>
         请点击以下链接进入下一步
         <a href="{{route('password.reset',$token)}}">
-            {{route('password.reset',$token)}}}}
+            {{route('password.reset',$token)}}
         </a>
     </p>
     <p>如果不是您本人操作，请忽略此邮件！</p>
