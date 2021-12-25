@@ -15,7 +15,9 @@ class UsersController extends Controller
         $this->middleware('guest',[
             'only'=>['create']
         ]);
-
+        $this->middleware('throttle:10,10', [
+            'only' => ['store']
+        ]);
     }
     public function create(){
         return view('users.create');
